@@ -17,39 +17,39 @@ function Base({title, children}) {
         <div className="base-div">
             <div className="base-main">
                 <div className="top-menu">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary my-nav">
-                        <div class="container-fluid color-div">
-                            <a class="navbar-brand nav title-nav" href="#">Data</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                    <nav className="navbar navbar-expand-lg bg-body-tertiary my-nav">
+                        <div className="container-fluid color-div">
+                            <a className="navbar-brand nav title-nav" href="#">Data</a>
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarScroll">
-                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style={{"--bs-scroll-height": 200+"px"}}>
+                            <div className="collapse navbar-collapse" id="navbarScroll">
+                                <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style={{"--bs-scroll-height": 200+"px"}}>
                                     {/* <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li> */}
                                     {/* <li class="nav-item">
                                         <a class="nav-link" href="#">Link</a>
                                     </li> */}
-                                    <li class="nav-item dropdown" onClick={changeColor}>
-                                        <button class="nav-link dropdown-toggle nav nav-color" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <li className="nav-item dropdown" onClick={changeColor}>
+                                        <button className="nav-link dropdown-toggle nav nav-color" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             students
                                         </button>
-                                        <ul class="dropdown-menu menu-drop">
-                                            <li onClick={()=>navigate("/students")}><button class="dropdown-item">Dashboard</button></li>
-                                            <li onClick={()=>navigate("/add-student")}><button class="dropdown-item">Create Student</button></li>
+                                        <ul className="dropdown-menu menu-drop">
+                                            <li onClick={()=>navigate("/students")}><button className="dropdown-item">Dashboard</button></li>
+                                            <li onClick={()=>navigate("/add-student")}><button className="dropdown-item">Create Student</button></li>
                                             
                                             {/* <li><hr class="dropdown-divider" /></li>
                                             <li><a class="dropdown-item" href="#">Something else here</a></li> */}
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown" onClick={changeColor}>
-                                        <button class="nav-link dropdown-toggle nav nav-color" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <li className="nav-item dropdown" onClick={changeColor}>
+                                        <button className="nav-link dropdown-toggle nav nav-color" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Mentors
                                         </button>
-                                        <ul class="dropdown-menu menu-drop">
-                                        <li onClick={()=>navigate("/mentors")}><button class="dropdown-item">Dashboard</button></li>
-                                         <li onClick={()=>navigate("/add-mentor")}><button class="dropdown-item">Create Mentor</button></li>
+                                        <ul className="dropdown-menu menu-drop">
+                                        <li onClick={()=>navigate("/mentors")}><button className="dropdown-item">Dashboard</button></li>
+                                         <li onClick={()=>navigate("/add-mentor")}><button className="dropdown-item">Create Mentor</button></li>
                                             
                                             {/* <li><hr class="dropdown-divider" /></li>
                                             <li><a class="dropdown-item" href="#">Something else here</a></li> */}

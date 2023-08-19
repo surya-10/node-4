@@ -19,9 +19,9 @@ function Mentor({mentorData, setMentorData}){
             }
         })
         let out = await result.json();
-        console.log(out);
+        // console.log(out);
         setMentorData(finalMentors);
-        console.log(finalMentors)
+        // console.log(finalMentors)
     }
     return (
         <div className="mentor-div">

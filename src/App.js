@@ -35,7 +35,7 @@ function App() {
         }
       })
       let ment = await mentors.json();
-      console.log(ment)
+      // console.log(ment)
       setMentorData(ment);
     }
     getAllMentor()

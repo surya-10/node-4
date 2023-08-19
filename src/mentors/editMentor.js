@@ -34,7 +34,7 @@ function EditMentor({mentorData, setMentorData}){
 
     async function EditMentor(obj){
         let ind = mentorData.findIndex((val)=>val.mentor_id===id);
-        console.log(ind)
+        // console.log(ind)
 
         let afterUpdate = await fetch(`https://school-hbtw.onrender.com/update-mentor`, {
             method:"PUT",

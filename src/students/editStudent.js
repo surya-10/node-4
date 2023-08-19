@@ -8,7 +8,7 @@ function Editstudent({studData, setStudData}){
 
     let {id} = useParams();
     id = +id;
-    console.log(id)
+    // console.log(id)
     let editedStud = studData.find((val)=>val.stud_id==id);
     // console.log(editedStud)
 

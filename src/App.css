@@ -332,12 +332,17 @@ input:focus{
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 3px 10px;
+    padding: 10px 10px;
     outline: none;
     border: none;
     border: 1px solid yellowgreen;
     font-size: 12px;
     text-align: center;
+  }
+  .mentor-form{
+    width: 90%;
+    font-size: 13px;
+    padding: 10px;
   }
   .stud-left h4{
     font-size: 15px;
