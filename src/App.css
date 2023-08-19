@@ -1,6 +1,9 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
 
 .App-logo {
   height: 40vmin;
@@ -11,6 +14,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+*{
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-header {
@@ -34,5 +40,316 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.my-nav{
+  background-color: black !important;
+
+}
+.color-div {
+  color: white;
+}
+.nav{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.dropdown{
+  margin-right: 50px;
+}
+.nav:hover{
+  color: azure;
+}
+.base-div{
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0px;
+}
+.base-main{
+  margin: 0 auto;
+
+}
+
+.title-nav{
+  font-size: 24px;
+  color: white !important;
+}
+.students, .mentors{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 26px;
+  width: 95%;
+  margin: 26px auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.student{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(164, 138, 138);
+  border-radius: 10px;
+  gap: 10px;
+  width: 390px;
+  justify-content: space-between;
+  min-height: 340px;
+  background: linear-gradient(to right, #c94b4b, #355C7D);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.stud-left{
+  display: flex;
+  width: 43%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  color: white;
+  border-right: 1px dashed darksalmon;
+}
+.stud-left h4{
+  padding: 20px;
+  font-size: 17px;
+}
+.stud-right{
+  width: 55%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+span{
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+}
+.stud-right p{
+  font-size: 14px;
+}
+.menu-drop{
+  box-shadow: 0px 0px 10px gray, 0px 0px 10px skyblue;
+}
+.btns button:first-child{
+  background-color: yellow;
+  color: blue;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.btns button:last-child{
+  background-color: crimson;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.base-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 50px 10px;
+}
+.stud{
+  width: 80%;
+  margin: 20px auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.stud h5{
+  text-align: center;
+  margin: 20px auto;
+}
+.stud .student-form{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+}
+.student-form input, .student-form select{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border: 1px solid yellowgreen;
+  font-size: 13px;
+  text-align: center;
+}
+input:focus{
+  /* background-color: #f67280; */
+  color: black;
+  box-shadow: 0px 0px 5px blueviolet, 0px 0px 5px orangered;
+}
+.stud-btn-div{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.add-stud-btn{
+  border: none;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background-color: #355C7D;
+  color: gainsboro;
+}
+.add-stud-btn:hover{
+  background-color:#6893b9;
+  color: white;
+}
+.right-children h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:800;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.navbar-toggler{
+  background-color: white !important;
+}
+.right-children{
+  background-color: whitesmoke;
+}
+
+.mentor{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(164, 138, 138);
+  border-radius: 10px;
+  width: 450px;
+  justify-content: space-between;
+  min-height: 400px;
+  background: linear-gradient(to right, #41295a, #2c3e50);
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+}
+.ment-left{
+  display: flex;
+  width: 43%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  color: white;
+  border-right: 1px dashed rgb(123, 153, 214);
+}
+.ment-right{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+.btns button:hover{
+  box-shadow: 0px 0px 5px white, 0px 0px 10px cadetblue;
+}
+.ment-left h3{
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.mentor-btn{
+  background-color: yellow;
+  color: black;
+  padding: 5px 10px;
+}
+.mentor-btn:hover{
+  background-color: rgb(237, 237, 72);
+  color: gray;
+}
+.mentor-form{
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  
+  width: 60%;
+}
+.mentor-form input{
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border:  1px solid crimson;
+  outline: none;
+}
+.student:hover{
+  box-shadow:  0px 0px 6px red, 0px 0px 5px yellow;
+}
+.mentor:hover{
+  box-shadow: 0px 0px 6px violet, 0px 0px 10px skyblue ;
+}
+
+@media only screen and (max-width:800px){
+  .stud{
+    width: 100%;
+    margin: 20px auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stud .student-form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+  }.stud h5{
+    font-size: 15px;
+  }
+  .right-children h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .student-form input, .student-form select{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3px 10px;
+    outline: none;
+    border: none;
+    border: 1px solid yellowgreen;
+    font-size: 12px;
+    text-align: center;
+  }
+  .stud-left h4{
+    font-size: 15px;
+  }
+  .ment-left h3{
+    padding-left: 10px;
+    font-size: 17px;
+  }
+  .ment-right{
+    font-size: 14px;
+  }
+  .dropdown button{
+    font-size: 15px !important;
   }
 }
